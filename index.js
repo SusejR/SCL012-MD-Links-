@@ -34,8 +34,9 @@ const file = (path, options) => {
             marked(data, { renderer: renderer });
             links = filteredLinks(links);
             links = status(links);
+            
 
-            resolve(links);
+            
         });
     });
 };
@@ -56,8 +57,6 @@ const status = (links) => {
 
     });
 };
-
-
 
 module.exports = file;
 
